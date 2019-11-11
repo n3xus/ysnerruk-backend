@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ysnerruk-api
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: ysnerruk-api
+    spec:
+      containers:
+        - name: actuator-sample
+          image: registry.gitlab.com/kimbrian/ysnerruk-api
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: registry.gitlab.com
