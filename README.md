@@ -1,4 +1,7 @@
 # API
+
+This is a project for ELEC5619 course. Members contributed to the project are Kimbrian, Kirk, Ali, Edwin and Gubi.
+
 ## Description
 This is a Spring Boot RESTful application with:
 - Maven for dependency management and build
